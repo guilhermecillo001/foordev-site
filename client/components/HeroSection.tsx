@@ -28,10 +28,10 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Main Title */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-fade-in">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-silver to-metallic bg-clip-text text-transparent animate-fade-in">
             Desenvolvimento
             <br />
-            <span className="text-4xl md:text-6xl">Web Futurista</span>
+            <span className="text-4xl md:text-6xl bg-gradient-to-r from-silver via-primary to-silver-light bg-clip-text text-transparent">Web Futurista</span>
           </h1>
 
           {/* Subtitle */}
