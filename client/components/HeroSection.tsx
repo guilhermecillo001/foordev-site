@@ -29,9 +29,13 @@ export default function HeroSection() {
         <div className="max-w-4xl mx-auto">
           {/* Main Title */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-silver to-metallic bg-clip-text text-transparent animate-fade-in">
-            Desenvolvimento
+            <span>
+              <p>Desenvolvimento Web</p>
+            </span>
             <br />
-            <span className="text-4xl md:text-6xl bg-gradient-to-r from-silver via-primary to-silver-light bg-clip-text text-transparent">Web Futurista</span>
+            <span className="text-4xl md:text-6xl bg-gradient-to-r from-silver via-primary to-silver-light bg-clip-text text-transparent">
+              <div></div>
+            </span>
           </h1>
 
           {/* Subtitle */}
