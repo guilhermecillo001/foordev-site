@@ -27,7 +27,7 @@ export default function ServicesSection() {
         "Formulários de contato",
         "Certificado SSL incluso"
       ],
-      color: "from-accent to-primary"
+      color: "from-silver to-metallic"
     },
     {
       icon: ShoppingCart,
