@@ -142,28 +142,6 @@ export default function ContactSection() {
 
                 <div className="flex items-center p-6 bg-card/30 backdrop-blur-sm rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 transform hover:scale-105">
                   <div className="w-12 h-12 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center mr-4">
-                    <Mail className="w-6 h-6 text-primary-foreground" />
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-semibold text-foreground">E-mail</h4>
-                    <p className="text-muted-foreground">contato@foordev.com</p>
-                    <p className="text-sm text-muted-foreground">Resposta em até 4 horas</p>
-                  </div>
-                </div>
-
-                <div className="flex items-center p-6 bg-card/30 backdrop-blur-sm rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 transform hover:scale-105">
-                  <div className="w-12 h-12 bg-gradient-to-r from-accent to-primary rounded-lg flex items-center justify-center mr-4">
-                    <Phone className="w-6 h-6 text-primary-foreground" />
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-semibold text-foreground">Telefone</h4>
-                    <p className="text-muted-foreground">+55 (11) 3333-4444</p>
-                    <p className="text-sm text-muted-foreground">Seg a Sex, 9h às 18h</p>
-                  </div>
-                </div>
-
-                <div className="flex items-center p-6 bg-card/30 backdrop-blur-sm rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 transform hover:scale-105">
-                  <div className="w-12 h-12 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center mr-4">
                     <MapPin className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div>
