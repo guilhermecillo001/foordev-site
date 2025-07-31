@@ -66,17 +66,17 @@ export default function HeroSection() {
             <Button
               onClick={scrollToContact}
               size="lg"
-              className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-primary-foreground font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              className="bg-gradient-to-r from-primary via-silver to-primary hover:from-primary/90 hover:via-silver/90 hover:to-primary/90 text-primary-foreground font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl hover:shadow-silver/20"
             >
               Iniciar Projeto
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
-            
+
             <Button
               onClick={() => document.getElementById("projetos")?.scrollIntoView({ behavior: "smooth" })}
               variant="outline"
               size="lg"
-              className="border-2 border-primary/50 text-primary hover:bg-primary/10 font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105"
+              className="border-2 border-silver/50 text-silver hover:bg-silver/10 hover:text-silver-light font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-silver/20"
             >
               Ver Projetos
             </Button>
