@@ -144,7 +144,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-foreground">WhatsApp</h4>
-                    <p className="text-muted-foreground">+55 (11) 99999-9999</p>
+                    <p className="text-muted-foreground">+55 (11) 92007-5704</p>
                     <p className="text-sm text-muted-foreground">Resposta em até 1 hora</p>
                   </div>
                 </div>
