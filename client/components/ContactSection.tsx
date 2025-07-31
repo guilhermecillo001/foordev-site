@@ -8,20 +8,22 @@ export default function ContactSection() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
   });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const sendToWhatsApp = () => {
     const { name, email, message } = formData;
-    
+
     if (!name || !email || !message) {
       alert("Por favor, preencha todos os campos antes de enviar.");
       return;
@@ -31,12 +33,15 @@ export default function ContactSection() {
     const encodedMessage = encodeURIComponent(whatsappMessage);
     const whatsappNumber = "5511920075704";
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
-    
+
     window.open(whatsappURL, "_blank");
   };
 
   return (
-    <section id="contato" className="py-20 bg-gradient-to-b from-secondary/10 to-background">
+    <section
+      id="contato"
+      className="py-20 bg-gradient-to-b from-secondary/10 to-background"
+    >
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
@@ -45,8 +50,9 @@ export default function ContactSection() {
               Vamos Conversar?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Estamos prontos para transformar sua ideia em realidade. Entre em contato 
-              e vamos discutir como podemos ajudar seu negócio a crescer no digital.
+              Estamos prontos para transformar sua ideia em realidade. Entre em
+              contato e vamos discutir como podemos ajudar seu negócio a crescer
+              no digital.
             </p>
           </div>
 
@@ -57,10 +63,13 @@ export default function ContactSection() {
                 <MessageCircle className="w-6 h-6 text-primary mr-3" />
                 Envie sua Mensagem
               </h3>
-              
+
               <form className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-foreground mb-2"
+                  >
                     Nome Completo
                   </label>
                   <Input
@@ -75,7 +84,10 @@ export default function ContactSection() {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-foreground mb-2"
+                  >
                     E-mail
                   </label>
                   <Input
@@ -90,7 +102,10 @@ export default function ContactSection() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-foreground mb-2"
+                  >
                     Mensagem
                   </label>
                   <Textarea
@@ -122,8 +137,8 @@ export default function ContactSection() {
                   Outras Formas de Contato
                 </h3>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                  Prefere falar diretamente conosco? Utilize qualquer um dos canais abaixo 
-                  para entrar em contato. Respondemos rapidamente!
+                  Prefere falar diretamente conosco? Utilize qualquer um dos
+                  canais abaixo para entrar em contato. Respondemos rapidamente!
                 </p>
               </div>
 
@@ -134,9 +149,13 @@ export default function ContactSection() {
                     <MessageCircle className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-foreground">WhatsApp</h4>
+                    <h4 className="text-lg font-semibold text-foreground">
+                      WhatsApp
+                    </h4>
                     <p className="text-muted-foreground">+55 (11) 92007-5704</p>
-                    <p className="text-sm text-muted-foreground">Resposta em até 1 hora</p>
+                    <p className="text-sm text-muted-foreground">
+                      Resposta em até 1 hora
+                    </p>
                   </div>
                 </div>
 
@@ -145,9 +164,13 @@ export default function ContactSection() {
                     <MapPin className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-foreground">Localização</h4>
+                    <h4 className="text-lg font-semibold text-foreground">
+                      Localização
+                    </h4>
                     <p className="text-muted-foreground">São Paulo, SP</p>
-                    <p className="text-sm text-muted-foreground">Atendimento remoto disponível</p>
+                    <p className="text-sm text-muted-foreground">
+                      Atendimento remoto disponível
+                    </p>
                   </div>
                 </div>
               </div>
@@ -158,12 +181,18 @@ export default function ContactSection() {
                   Orçamento Gratuito
                 </h4>
                 <p className="text-muted-foreground text-sm mb-4">
-                  Receba uma proposta personalizada para seu projeto sem compromisso.
+                  Receba uma proposta personalizada para seu projeto sem
+                  compromisso.
                 </p>
                 <Button
                   onClick={() => {
-                    const whatsappMessage = encodeURIComponent("Olá! Gostaria de solicitar um orçamento gratuito para meu projeto.");
-                    window.open(`https://wa.me/5511920075704?text=${whatsappMessage}`, "_blank");
+                    const whatsappMessage = encodeURIComponent(
+                      "Olá! Gostaria de solicitar um orçamento gratuito para meu projeto.",
+                    );
+                    window.open(
+                      `https://wa.me/5511920075704?text=${whatsappMessage}`,
+                      "_blank",
+                    );
                   }}
                   className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-primary-foreground font-semibold px-6 py-2 rounded-lg transition-all duration-300"
                 >

@@ -6,42 +6,45 @@ export default function ServicesSection() {
     {
       icon: Globe,
       title: "Landing Pages",
-      description: "Páginas de conversão otimizadas para capturar leads e gerar resultados.",
+      description:
+        "Páginas de conversão otimizadas para capturar leads e gerar resultados.",
       features: [
         "Design responsivo e moderno",
         "Otimização para conversões",
         "Integração com analytics",
         "Carregamento ultra-rápido",
-        "SEO otimizado"
+        "SEO otimizado",
       ],
-      color: "from-primary to-accent"
+      color: "from-primary to-accent",
     },
     {
       icon: Zap,
       title: "Sites Institucionais",
-      description: "Websites profissionais que representam sua marca com excelência.",
+      description:
+        "Websites profissionais que representam sua marca com excelência.",
       features: [
         "Design personalizado",
         "CMS para gestão de conteúdo",
         "Integração com redes sociais",
         "Formulários de contato",
-        "Certificado SSL incluso"
+        "Certificado SSL incluso",
       ],
-      color: "from-silver to-metallic"
+      color: "from-silver to-metallic",
     },
     {
       icon: ShoppingCart,
       title: "E-commerces",
-      description: "Lojas virtuais completas para maximizar suas vendas online.",
+      description:
+        "Lojas virtuais completas para maximizar suas vendas online.",
       features: [
         "Carrinho de compras avançado",
         "Gateway de pagamentos",
         "Gestão de produtos",
         "Sistema de cupons",
-        "Relatórios de vendas"
+        "Relatórios de vendas",
       ],
-      color: "from-primary via-accent to-primary"
-    }
+      color: "from-primary via-accent to-primary",
+    },
   ];
 
   const scrollToContact = () => {
@@ -52,7 +55,10 @@ export default function ServicesSection() {
   };
 
   return (
-    <section id="servicos" className="py-20 bg-gradient-to-b from-secondary/10 to-background">
+    <section
+      id="servicos"
+      className="py-20 bg-gradient-to-b from-secondary/10 to-background"
+    >
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
@@ -61,8 +67,9 @@ export default function ServicesSection() {
               Nossos Serviços
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Oferecemos soluções completas de desenvolvimento web, desde landing pages 
-              de alta conversão até e-commerces robustos e funcionais.
+              Oferecemos soluções completas de desenvolvimento web, desde
+              landing pages de alta conversão até e-commerces robustos e
+              funcionais.
             </p>
           </div>
 
@@ -76,7 +83,9 @@ export default function ServicesSection() {
                   className="group bg-gradient-to-br from-card/50 to-silver/5 backdrop-blur-sm p-8 rounded-2xl border border-silver/20 hover:border-primary/50 transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-silver/20"
                 >
                   {/* Service Icon */}
-                  <div className={`w-16 h-16 bg-gradient-to-r ${service.color} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                  <div
+                    className={`w-16 h-16 bg-gradient-to-r ${service.color} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
+                  >
                     <Icon className="w-8 h-8 text-primary-foreground" />
                   </div>
 
@@ -93,7 +102,10 @@ export default function ServicesSection() {
                   {/* Features List */}
                   <ul className="space-y-3 mb-8">
                     {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center text-sm text-muted-foreground">
+                      <li
+                        key={featureIndex}
+                        className="flex items-center text-sm text-muted-foreground"
+                      >
                         <Check className="w-4 h-4 text-primary mr-3 flex-shrink-0" />
                         {feature}
                       </li>
@@ -119,15 +131,18 @@ export default function ServicesSection() {
             <h3 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Nosso Processo
             </h3>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="w-12 h-12 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-4 text-primary-foreground font-bold text-lg">
                   1
                 </div>
-                <h4 className="text-lg font-semibold text-foreground mb-2">Análise</h4>
+                <h4 className="text-lg font-semibold text-foreground mb-2">
+                  Análise
+                </h4>
                 <p className="text-sm text-muted-foreground">
-                  Entendemos suas necessidades e objetivos para criar a estratégia ideal.
+                  Entendemos suas necessidades e objetivos para criar a
+                  estratégia ideal.
                 </p>
               </div>
 
@@ -135,9 +150,12 @@ export default function ServicesSection() {
                 <div className="w-12 h-12 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-4 text-primary-foreground font-bold text-lg">
                   2
                 </div>
-                <h4 className="text-lg font-semibold text-foreground mb-2">Planejamento</h4>
+                <h4 className="text-lg font-semibold text-foreground mb-2">
+                  Planejamento
+                </h4>
                 <p className="text-sm text-muted-foreground">
-                  Desenvolvemos um plano detalhado com cronograma e especificações técnicas.
+                  Desenvolvemos um plano detalhado com cronograma e
+                  especificações técnicas.
                 </p>
               </div>
 
@@ -145,9 +163,12 @@ export default function ServicesSection() {
                 <div className="w-12 h-12 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-4 text-primary-foreground font-bold text-lg">
                   3
                 </div>
-                <h4 className="text-lg font-semibold text-foreground mb-2">Desenvolvimento</h4>
+                <h4 className="text-lg font-semibold text-foreground mb-2">
+                  Desenvolvimento
+                </h4>
                 <p className="text-sm text-muted-foreground">
-                  Criamos sua solução com as melhores tecnologias e práticas do mercado.
+                  Criamos sua solução com as melhores tecnologias e práticas do
+                  mercado.
                 </p>
               </div>
 
@@ -155,9 +176,12 @@ export default function ServicesSection() {
                 <div className="w-12 h-12 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-4 text-primary-foreground font-bold text-lg">
                   4
                 </div>
-                <h4 className="text-lg font-semibold text-foreground mb-2">Entrega</h4>
+                <h4 className="text-lg font-semibold text-foreground mb-2">
+                  Entrega
+                </h4>
                 <p className="text-sm text-muted-foreground">
-                  Realizamos testes finais e entregamos sua solução pronta para o sucesso.
+                  Realizamos testes finais e entregamos sua solução pronta para
+                  o sucesso.
                 </p>
               </div>
             </div>

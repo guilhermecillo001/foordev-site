@@ -1,4 +1,12 @@
-import { Github, Linkedin, Instagram, Mail, Phone, MapPin, MessageCircle } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Instagram,
+  Mail,
+  Phone,
+  MapPin,
+  MessageCircle,
+} from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -20,16 +28,18 @@ export default function Footer() {
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-2 mb-6">
                 <div className="w-10 h-10 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center">
-                  <span className="text-primary-foreground font-bold text-xl">F</span>
+                  <span className="text-primary-foreground font-bold text-xl">
+                    F
+                  </span>
                 </div>
                 <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                   Foordev
                 </span>
               </div>
-              
+
               <p className="text-muted-foreground mb-6 leading-relaxed max-w-md">
-                Transformamos ideias em experiências digitais extraordinárias. 
-                Especializados em desenvolvimento web moderno, criamos soluções 
+                Transformamos ideias em experiências digitais extraordinárias.
+                Especializados em desenvolvimento web moderno, criamos soluções
                 que impulsionam o sucesso dos nossos clientes.
               </p>
 
@@ -132,7 +142,7 @@ export default function Footer() {
                 </li>
                 <li className="flex items-center text-muted-foreground">
                   <Mail className="w-4 h-4 mr-3 text-primary" />
-                  <a 
+                  <a
                     href="mailto:contato@foordev.com"
                     className="hover:text-primary transition-colors"
                   >
@@ -158,16 +168,28 @@ export default function Footer() {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="text-center p-4 bg-card/30 backdrop-blur-sm rounded-lg border border-border/30 hover:border-primary/50 transition-all duration-300">
-                <h4 className="font-semibold text-foreground mb-1">Landing Pages</h4>
-                <p className="text-sm text-muted-foreground">Páginas de alta conversão</p>
+                <h4 className="font-semibold text-foreground mb-1">
+                  Landing Pages
+                </h4>
+                <p className="text-sm text-muted-foreground">
+                  Páginas de alta conversão
+                </p>
               </div>
               <div className="text-center p-4 bg-card/30 backdrop-blur-sm rounded-lg border border-border/30 hover:border-primary/50 transition-all duration-300">
-                <h4 className="font-semibold text-foreground mb-1">Sites Institucionais</h4>
-                <p className="text-sm text-muted-foreground">Presença digital profissional</p>
+                <h4 className="font-semibold text-foreground mb-1">
+                  Sites Institucionais
+                </h4>
+                <p className="text-sm text-muted-foreground">
+                  Presença digital profissional
+                </p>
               </div>
               <div className="text-center p-4 bg-card/30 backdrop-blur-sm rounded-lg border border-border/30 hover:border-primary/50 transition-all duration-300">
-                <h4 className="font-semibold text-foreground mb-1">E-commerces</h4>
-                <p className="text-sm text-muted-foreground">Lojas virtuais completas</p>
+                <h4 className="font-semibold text-foreground mb-1">
+                  E-commerces
+                </h4>
+                <p className="text-sm text-muted-foreground">
+                  Lojas virtuais completas
+                </p>
               </div>
             </div>
           </div>
@@ -176,17 +198,28 @@ export default function Footer() {
           <div className="border-t border-border/50 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <div className="text-sm text-muted-foreground">
-                <p>&copy; {currentYear} Foordev. Todos os direitos reservados.</p>
+                <p>
+                  &copy; {currentYear} Foordev. Todos os direitos reservados.
+                </p>
               </div>
-              
+
               <div className="flex space-x-6 text-sm">
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Política de Privacidade
                 </a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Termos de Uso
                 </a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Cookies
                 </a>
               </div>
@@ -199,8 +232,18 @@ export default function Footer() {
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-primary to-accent rounded-full text-primary-foreground hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 10l7-7m0 0l7 7m-7-7v18"
+                />
               </svg>
             </button>
           </div>

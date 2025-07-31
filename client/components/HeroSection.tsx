@@ -10,7 +10,10 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="inicio" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background via-secondary/20 to-background">
+    <section
+      id="inicio"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background via-secondary/20 to-background"
+    >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-r from-primary/10 to-silver/10 rounded-full blur-3xl animate-pulse"></div>
@@ -40,7 +43,7 @@ export default function HeroSection() {
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed animate-fade-in-delay">
-            Transformamos suas ideias em experiências digitais extraordinárias. 
+            Transformamos suas ideias em experiências digitais extraordinárias.
             Sites modernos, interativos e otimizados para o futuro.
           </p>
 
@@ -48,20 +51,32 @@ export default function HeroSection() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-3xl mx-auto">
             <div className="flex flex-col items-center p-6 bg-gradient-to-br from-card/50 to-silver/5 backdrop-blur-sm rounded-xl border border-silver/20 hover:border-primary/50 transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-silver/10">
               <Code className="w-12 h-12 text-primary mb-4" />
-              <h3 className="text-lg font-semibold text-silver-light mb-2">Código Limpo</h3>
-              <p className="text-sm text-muted-foreground text-center">Desenvolvimento com as melhores práticas e tecnologias modernas</p>
+              <h3 className="text-lg font-semibold text-silver-light mb-2">
+                Código Limpo
+              </h3>
+              <p className="text-sm text-muted-foreground text-center">
+                Desenvolvimento com as melhores práticas e tecnologias modernas
+              </p>
             </div>
 
             <div className="flex flex-col items-center p-6 bg-gradient-to-br from-card/50 to-metallic/10 backdrop-blur-sm rounded-xl border border-metallic/30 hover:border-silver/50 transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-metallic/20">
               <Zap className="w-12 h-12 text-silver mb-4" />
-              <h3 className="text-lg font-semibold text-silver-light mb-2">Performance</h3>
-              <p className="text-sm text-muted-foreground text-center">Sites rápidos e otimizados para todos os dispositivos</p>
+              <h3 className="text-lg font-semibold text-silver-light mb-2">
+                Performance
+              </h3>
+              <p className="text-sm text-muted-foreground text-center">
+                Sites rápidos e otimizados para todos os dispositivos
+              </p>
             </div>
 
             <div className="flex flex-col items-center p-6 bg-gradient-to-br from-card/50 to-silver/5 backdrop-blur-sm rounded-xl border border-silver/20 hover:border-primary/50 transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-silver/10">
               <Globe className="w-12 h-12 text-primary mb-4" />
-              <h3 className="text-lg font-semibold text-silver-light mb-2">Inovação</h3>
-              <p className="text-sm text-muted-foreground text-center">Soluções criativas que se destacam no mercado digital</p>
+              <h3 className="text-lg font-semibold text-silver-light mb-2">
+                Inovação
+              </h3>
+              <p className="text-sm text-muted-foreground text-center">
+                Soluções criativas que se destacam no mercado digital
+              </p>
             </div>
           </div>
 
@@ -77,7 +92,11 @@ export default function HeroSection() {
             </Button>
 
             <Button
-              onClick={() => document.getElementById("projetos")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() =>
+                document
+                  .getElementById("projetos")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
               variant="outline"
               size="lg"
               className="border-2 border-silver/50 text-silver hover:bg-silver/10 hover:text-silver-light font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-silver/20"

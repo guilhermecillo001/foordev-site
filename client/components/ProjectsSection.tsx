@@ -6,51 +6,57 @@ export default function ProjectsSection() {
     {
       id: 1,
       title: "TechStore E-commerce",
-      description: "Loja virtual completa para produtos eletrônicos com sistema de pagamento integrado e painel administrativo.",
+      description:
+        "Loja virtual completa para produtos eletrônicos com sistema de pagamento integrado e painel administrativo.",
       image: "/api/placeholder/600/400",
       tags: ["E-commerce", "React", "Node.js", "Stripe"],
-      category: "E-commerce"
+      category: "E-commerce",
     },
     {
       id: 2,
       title: "AgroTech Landing Page",
-      description: "Landing page de alta conversão para startup de tecnologia agrícola, resultando em 300% mais leads.",
+      description:
+        "Landing page de alta conversão para startup de tecnologia agrícola, resultando em 300% mais leads.",
       image: "/api/placeholder/600/400",
       tags: ["Landing Page", "Next.js", "Tailwind", "Analytics"],
-      category: "Landing Page"
+      category: "Landing Page",
     },
     {
       id: 3,
       title: "Medical Center Website",
-      description: "Site institucional para clínica médica com sistema de agendamento online e integração WhatsApp.",
+      description:
+        "Site institucional para clínica médica com sistema de agendamento online e integração WhatsApp.",
       image: "/api/placeholder/600/400",
       tags: ["Website", "React", "WordPress", "API"],
-      category: "Site Institucional"
+      category: "Site Institucional",
     },
     {
       id: 4,
       title: "Fashion Brand Store",
-      description: "E-commerce de moda com filtros avançados, wishlist e integração com redes sociais.",
+      description:
+        "E-commerce de moda com filtros avançados, wishlist e integração com redes sociais.",
       image: "/api/placeholder/600/400",
       tags: ["E-commerce", "Vue.js", "Shopify", "PWA"],
-      category: "E-commerce"
+      category: "E-commerce",
     },
     {
       id: 5,
       title: "SaaS Platform Landing",
-      description: "Landing page para plataforma SaaS B2B com foco em conversão e demonstração do produto.",
+      description:
+        "Landing page para plataforma SaaS B2B com foco em conversão e demonstração do produto.",
       image: "/api/placeholder/600/400",
       tags: ["Landing Page", "React", "Framer Motion", "CRO"],
-      category: "Landing Page"
+      category: "Landing Page",
     },
     {
       id: 6,
       title: "Restaurant Website",
-      description: "Site para restaurante com cardápio online, sistema de reservas e delivery integrado.",
+      description:
+        "Site para restaurante com cardápio online, sistema de reservas e delivery integrado.",
       image: "/api/placeholder/600/400",
       tags: ["Website", "Next.js", "CMS", "PWA"],
-      category: "Site Institucional"
-    }
+      category: "Site Institucional",
+    },
   ];
 
   const scrollToContact = () => {
@@ -61,7 +67,10 @@ export default function ProjectsSection() {
   };
 
   return (
-    <section id="projetos" className="py-20 bg-gradient-to-b from-background to-secondary/10">
+    <section
+      id="projetos"
+      className="py-20 bg-gradient-to-b from-background to-secondary/10"
+    >
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
@@ -70,8 +79,8 @@ export default function ProjectsSection() {
               Projetos Realizados
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Conheça alguns dos projetos que desenvolvemos para nossos clientes, 
-              cada um com soluções únicas e resultados excepcionais.
+              Conheça alguns dos projetos que desenvolvemos para nossos
+              clientes, cada um com soluções únicas e resultados excepcionais.
             </p>
           </div>
 
@@ -86,19 +95,30 @@ export default function ProjectsSection() {
                 <div className="relative h-48 bg-gradient-to-br from-primary/20 to-accent/20 overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
                     <div className="text-6xl font-bold text-primary/30">
-                      {project.category === "E-commerce" ? "🛒" : 
-                       project.category === "Landing Page" ? "🚀" : "🌐"}
+                      {project.category === "E-commerce"
+                        ? "🛒"
+                        : project.category === "Landing Page"
+                          ? "🚀"
+                          : "🌐"}
                     </div>
                   </div>
-                  
+
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
                     <div className="flex space-x-2">
-                      <Button size="sm" variant="secondary" className="opacity-90">
+                      <Button
+                        size="sm"
+                        variant="secondary"
+                        className="opacity-90"
+                      >
                         <ExternalLink className="w-4 h-4 mr-1" />
                         Ver Site
                       </Button>
-                      <Button size="sm" variant="outline" className="opacity-90">
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="opacity-90"
+                      >
                         <Github className="w-4 h-4" />
                       </Button>
                     </div>
@@ -153,7 +173,7 @@ export default function ProjectsSection() {
               Pronto para o Próximo Projeto?
             </h3>
             <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Vamos transformar sua ideia em uma solução digital excepcional. 
+              Vamos transformar sua ideia em uma solução digital excepcional.
               Entre em contato e vamos discutir seu projeto.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -165,7 +185,7 @@ export default function ProjectsSection() {
                 Solicitar Orçamento
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
-              
+
               <Button
                 variant="outline"
                 size="lg"
