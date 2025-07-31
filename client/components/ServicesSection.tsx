@@ -73,7 +73,7 @@ export default function ServicesSection() {
               return (
                 <div
                   key={index}
-                  className="group bg-card/50 backdrop-blur-sm p-8 rounded-2xl border border-border/50 hover:border-primary/50 transition-all duration-500 transform hover:scale-105 hover:shadow-2xl"
+                  className="group bg-gradient-to-br from-card/50 to-silver/5 backdrop-blur-sm p-8 rounded-2xl border border-silver/20 hover:border-primary/50 transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-silver/20"
                 >
                   {/* Service Icon */}
                   <div className={`w-16 h-16 bg-gradient-to-r ${service.color} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
