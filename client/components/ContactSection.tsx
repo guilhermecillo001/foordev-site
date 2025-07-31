@@ -29,7 +29,7 @@ export default function ContactSection() {
 
     const whatsappMessage = `*Nova solicitação do site Foordev*\n\n*Nome:* ${name}\n*E-mail:* ${email}\n*Mensagem:* ${message}`;
     const encodedMessage = encodeURIComponent(whatsappMessage);
-    const whatsappNumber = "5511999999999"; // Substitua pelo número real
+    const whatsappNumber = "5511920075704";
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
     
     window.open(whatsappURL, "_blank");
