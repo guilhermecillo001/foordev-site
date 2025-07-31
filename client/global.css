@@ -209,4 +209,31 @@
   .animate-spin-slow {
     animation: spin-slow 20s linear infinite;
   }
+
+  /* Metallic effects */
+  .metallic-glow {
+    box-shadow: 0 0 20px hsl(var(--silver) / 0.3),
+                0 0 40px hsl(var(--metallic) / 0.2),
+                inset 0 1px 0 hsl(var(--silver-light) / 0.2);
+  }
+
+  .silver-shine {
+    background: linear-gradient(135deg,
+      hsl(var(--silver-light)) 0%,
+      hsl(var(--silver)) 25%,
+      hsl(var(--metallic)) 50%,
+      hsl(var(--silver)) 75%,
+      hsl(var(--silver-light)) 100%);
+    background-size: 200% 200%;
+    animation: shine 3s ease-in-out infinite;
+  }
+
+  @keyframes shine {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
 }
