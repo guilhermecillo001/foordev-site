@@ -42,21 +42,21 @@ export default function HeroSection() {
 
           {/* Features Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-3xl mx-auto">
-            <div className="flex flex-col items-center p-6 bg-card/50 backdrop-blur-sm rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 transform hover:scale-105">
+            <div className="flex flex-col items-center p-6 bg-gradient-to-br from-card/50 to-silver/5 backdrop-blur-sm rounded-xl border border-silver/20 hover:border-primary/50 transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-silver/10">
               <Code className="w-12 h-12 text-primary mb-4" />
-              <h3 className="text-lg font-semibold text-foreground mb-2">Código Limpo</h3>
+              <h3 className="text-lg font-semibold text-silver-light mb-2">Código Limpo</h3>
               <p className="text-sm text-muted-foreground text-center">Desenvolvimento com as melhores práticas e tecnologias modernas</p>
             </div>
-            
-            <div className="flex flex-col items-center p-6 bg-card/50 backdrop-blur-sm rounded-xl border border-border/50 hover:border-accent/50 transition-all duration-300 transform hover:scale-105">
-              <Zap className="w-12 h-12 text-accent mb-4" />
-              <h3 className="text-lg font-semibold text-foreground mb-2">Performance</h3>
+
+            <div className="flex flex-col items-center p-6 bg-gradient-to-br from-card/50 to-metallic/10 backdrop-blur-sm rounded-xl border border-metallic/30 hover:border-silver/50 transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-metallic/20">
+              <Zap className="w-12 h-12 text-silver mb-4" />
+              <h3 className="text-lg font-semibold text-silver-light mb-2">Performance</h3>
               <p className="text-sm text-muted-foreground text-center">Sites rápidos e otimizados para todos os dispositivos</p>
             </div>
-            
-            <div className="flex flex-col items-center p-6 bg-card/50 backdrop-blur-sm rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 transform hover:scale-105">
+
+            <div className="flex flex-col items-center p-6 bg-gradient-to-br from-card/50 to-silver/5 backdrop-blur-sm rounded-xl border border-silver/20 hover:border-primary/50 transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-silver/10">
               <Globe className="w-12 h-12 text-primary mb-4" />
-              <h3 className="text-lg font-semibold text-foreground mb-2">Inovação</h3>
+              <h3 className="text-lg font-semibold text-silver-light mb-2">Inovação</h3>
               <p className="text-sm text-muted-foreground text-center">Soluções criativas que se destacam no mercado digital</p>
             </div>
           </div>
